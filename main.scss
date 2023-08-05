@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Oggitalic";
+  src: url("./oggitalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Giselle";
+  src: url("./giselle.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #161616;
+}
+.img {
+  width: 100%;
+  height: 100vh;
+  background: url(./img.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & h1 {
+    text-transform: capitalize;
+    font-size: 12vh;
+    color: white;
+    font-family: "Oggitalic";
+  }
+}
+
+.container {
+  width: 100%;
+  height: 130vh;
+}
+.container .text {
+  font-size: 11.2vh;
+  font-family: "Giselle";
+  line-height: 1;
+  padding: 0 5vw;
+}
+.text p {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 50%,
+    rgb(50, 50, 50) 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
